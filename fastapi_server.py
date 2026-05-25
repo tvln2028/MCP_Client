@@ -14,11 +14,11 @@ load_dotenv()
 MCP_SERVERS = {
     "hrms": {
         "transport": "stdio",
-        "command": "python",
-        "args": ["D:\\projects\\hr-assist\\server.py"],
+        "command": r"C:\Users\tvln1\hr-assist\.venv\Scripts\python.exe",
+        "args": [r"C:\Users\tvln1\hr-assist\server.py"],
         "env": {
-            "CB_EMAIL": os.getenv("CB_EMAIL"),
-            "CB_EMAIL_PWD": os.getenv("CB_EMAIL_PWD")
+            "CB_EMAIL": os.getenv("CB_EMAIL", ""),
+            "CB_EMAIL_PWD": os.getenv("CB_EMAIL_PWD", "")
         }
     }
 }
